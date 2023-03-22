@@ -1,14 +1,85 @@
 <script>
-let opcao=prompt("--> menu do pote - Qual pote você deseja abrir? <-- \n 1 Feijao \n 2 Arroz \n 3 Acucar \n 4 Macarrao \n 5 Cafe \n 6 Batata Palha \n 7 Farinha (da Bahia) \n 8 Sair \n")
+//proxima palavra o fessor vai falar de booleano :0000 e laco for B)))
+
+const CAP_POTEDEFEIJAO=1000,  CAP_POTEDEARROZ=5000,   CAP_POTEDEACUCAR=5000,  CAP_POTEDEMACARRAO=500,  CAP_POTEDEFARINHA=250,  CAP_POTEDECAFE=500,   CAP_BATATAPALHA=1500;
+
+
+
+
+var quanti, poteFeijao, poteArroz, poteAcucar, poteMacarrao, poteCafe, poteBatatapalha, poteFarinha;
+
+let opcao=prompt("--> menu do pote - Qual pote você deseja abrir? <-- \n 1 Feijao \n 2 Arroz \n 3 Acucar \n 4 Macarrao \n 5 Cafe \n 6 Batata Palha \n 7 Farinha (da Bahia) \n 8 Sair \n");
 //minha opcao esta valendo o que eu digitei
+quant1=prompt("Qual a quantidade de mantimento");
 switch (opcao) {
   case 0:
-    text = "Off";
+    pote_feijao(quanti);
     break;
   case 1:
-    text = "On";
+    pote_arroz(quanti);
+    break;
+ case 2:
+    pote_acucar(quanti);
+    break;
+ case 3:
+    pote_macarrao(quanti);
+    break;
+ case 4:
+    pote_cafe(quanti);
+    break;
+ case 5:
+    pote_batatapalha(quanti);
+    break;
+ case 6:
+    pote_farinha(quanti);
     break;
   default:
     text = "No value found";
+}
+
+function pote_feijao(quanti);
+{
+	if (poteFeijao < CAP_POTEDEFEIJAO);
+	{
+	 let sobrando=0;
+	 //encher o pote de feijao
+	 poteFeijao=poteFeijao+quanti;
+	 return sobrando = CAP_POTEDEFEIJAO-poteFeijao;
+	}
+	else;
+	{
+		let sobrando=0;
+		prompt("O pote já está cheio");
+		return;
+	return p1 * p2;
+	}
+}
+function pote_arroz(quanti);
+{
+	return p1 * p2;
+}
+function pote_acucar(quanti);
+{
+	return p1 * p2;
+}
+function pote_macarrao(quanti);
+{
+	return p1 * p2;
+}
+function pote_cafe(quanti);
+{
+	return p1 * p2;
+}
+function pote_batatapalha(quanti);
+{
+	return p1 * p2;
+}
+function pote_farinha(quanti);
+{
+	return p1 * p2;
+}
+function pote_sair(quanti);
+{
+	return p1 * p2;
 }
 </script>
